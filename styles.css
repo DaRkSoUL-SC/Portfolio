@@ -18,6 +18,18 @@ body{
     counter-reset: item;
     background-color: #0a192f;
 }
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
 /* Navbar */
 header{
     background-color: white;
@@ -40,6 +52,7 @@ a{
     padding: 0 50px;
     width: 100%;
     background-color: #0a192f;
+    z-index: 50;
 }
 
 .nav-menu{
@@ -1001,6 +1014,89 @@ section{
 }
 }
 
+@media (max-width:766px) and (min-width:541px){
+  .right>a{
+    font-size: 10px;
+  }
+  .rob-img{
+    display: none;
+  }
+  .navbars{
+    min-height: 70px;
+  }
+  .nav-menu{
+    top: 70px;
+  }
+  .hero{
+    padding: 0px 100px;
+  }
+  .hero>h1{
+    font-size: 12px;
+    margin: 0px 0px 15px 4px;
+  }
+  .hero>h2{
+    font-size: 27px;
+  }
+  .hero>h3{
+    font-size: 27px;
+  }
+  .hero>p{
+    font-size: 12px;
+  }
+  .btn{
+    font-size: 12px;
+    padding: 10px 12px;
+  }
+  .about{
+    padding: 0px 100px;
+  }
+  .about>h2::before{
+    font-size: 14px;
+  }
+  .about>h2{
+    font-size: 20px;
+    overflow: hidden;
+  }
+  .about>p{
+    font-size: 14px;
+  }
+  .skill-list>li{
+    font-size: 12px;
+  }
+  .projects>h2{
+    font-size: 20px;
+  }
+  .projects>h2::before{
+    font-size: 14px;
+  }
+
+  .project-title>a{
+    font-size: 20px;
+  }
+  .project-description{
+    font-size: 14px;
+    padding: 10px;
+  }
+  .project-tech-list>li {
+    font-size: 10px;
+  }
+  .contact{
+    padding: 0px 100px;
+  }
+  .contact>h6::before{
+    font-size: 14px;
+  }
+  .contact-title{
+    font-size: 27px;
+  }
+  .contact-desc{
+    font-size: 14px;
+  }
+  .contact-btn{
+    font-size: 12px;
+    padding: 10px 12px;
+  }
+}
 
 /* Tablet View */
  @media (max-width:1023px) and (min-width:768px) {
@@ -1019,6 +1115,12 @@ section{
   .hero>h3{
     font-size: 59px;
   }
+  .about{
+    padding:0px 150px;
+  }
+  .projects{
+    padding: 0px 150px;
+  }
   .project-img-l{
     float: none;
     height: 300px;
@@ -1028,6 +1130,9 @@ section{
     float: none;
     height: 300px;
     width: 400px;
+  }
+  .contact{
+    padding: 0px 150px;
   }
 }
 
